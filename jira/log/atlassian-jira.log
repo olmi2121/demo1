@@ -1,0 +1,301 @@
+2021-11-09 14:50:23,428+0000 localhost-startStop-1 INFO      [c.a.jira.startup.JiraHomeStartupCheck] The jira.home directory '/var/atlassian/application-data/jira' is validated and locked for exclusive use by this instance.
+2021-11-09 14:50:23,789+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] 
+    
+    ****************
+    Jira starting...
+    ****************
+    
+2021-11-09 14:50:24,134+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] 
+    
+    ___ Environment _____________________________
+    
+         JIRA Build                                    : 8.20.1#820001-sha1:6d4b94dbcc29d26a5651b231dd69e39cd4357315
+         Build Date                                    : Thu Oct 28 00:00:00 UTC 2021
+         JIRA Installation Type                        : Standalone
+         Application Server                            : Apache Tomcat/8.5.65 - Servlet API 3.1
+         Java Version                                  : 11.0.13 - Eclipse Adoptium
+         Current Working Directory                     : /var/atlassian/application-data/jira
+         Maximum Allowable Memory                      : 2048MB
+         Total Memory                                  : 384MB
+         Free Memory                                   : 267MB
+         Used Memory                                   : 117MB
+         Memory Pool: CodeHeap 'non-nmethods'          : CodeHeap 'non-nmethods': init = 5832704(5696K) used = 1255808(1226K) committed = 5832704(5696K) max = 5832704(5696K)
+         Memory Pool: Metaspace                        : Metaspace: init = 0(0K) used = 29627808(28933K) committed = 30588928(29872K) max = -1(-1K)
+         Memory Pool: CodeHeap 'profiled nmethods'     : CodeHeap 'profiled nmethods': init = 33554432(32768K) used = 7986432(7799K) committed = 33554432(32768K) max = 265519104(259296K)
+         Memory Pool: Compressed Class Space           : Compressed Class Space: init = 0(0K) used = 3004464(2934K) committed = 3407872(3328K) max = 1073741824(1048576K)
+         Memory Pool: G1 Eden Space                    : G1 Eden Space: init = 20971520(20480K) used = 93323264(91136K) committed = 243269632(237568K) max = -1(-1K)
+         Memory Pool: G1 Old Gen                       : G1 Old Gen: init = 381681664(372736K) used = 21108224(20613K) committed = 148897792(145408K) max = 2147483648(2097152K)
+         Memory Pool: G1 Survivor Space                : G1 Survivor Space: init = 0(0K) used = 10485760(10240K) committed = 10485760(10240K) max = -1(-1K)
+         Memory Pool: CodeHeap 'non-profiled nmethods' : CodeHeap 'non-profiled nmethods': init = 33554432(32768K) used = 1764992(1723K) committed = 33554432(32768K) max = 265519104(259296K)
+         JVM Input Arguments                           : --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/atlassian/jira/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Xms384m -Xmx2048m -XX:InitialCodeCacheSize=32m -XX:ReservedCodeCacheSize=512m -Djava.awt.headless=true -Datlassian.standalone=JIRA -Dorg.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER=true -Dmail.mime.decodeparameters=true -Dorg.dom4j.factory=com.atlassian.core.xml.InterningDocumentFactory -XX:-OmitStackTraceInFastThrow -Djava.locale.providers=COMPAT -Djira.home=/var/atlassian/application-data/jira -Datlassian.plugins.startup.options=-fg -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xlog:gc*:file=/opt/atlassian/jira/logs/atlassian-jira-gc-%t.log:tags,time,uptime,level:filecount=5,filesize=20M -XX:+ExplicitGCInvokesConcurrent -Dignore.endorsed.dirs= -Dcatalina.base=/opt/atlassian/jira -Dcatalina.home=/opt/atlassian/jira -Djava.io.tmpdir=/opt/atlassian/jira/temp
+         Java Compatibility Information                : JIRA version = 8.20.1, Java Version = 11.0.13
+    
+    ___ Java System Properties _________________
+    
+         atlassian.plugins.startup.options             : -fg
+         atlassian.standalone                          : JIRA
+         awt.toolkit                                   : sun.awt.X11.XToolkit
+         catalina.base                                 : /opt/atlassian/jira
+         catalina.home                                 : /opt/atlassian/jira
+         catalina.useNaming                            : true
+         common.loader                                 : "${catalina.base}/lib",
+                                                         "${catalina.base}/lib/*.jar",
+                                                         "${catalina.home}/lib",
+                                                         "${catalina.home}/lib/*.jar"
+         file.encoding                                 : UTF-8
+         ignore.endorsed.dirs                          : 
+         java.awt.graphicsenv                          : sun.awt.X11GraphicsEnvironment
+         java.awt.headless                             : true
+         java.awt.printerjob                           : sun.print.PSPrinterJob
+         java.class.version                            : 55.0
+         java.home                                     : /opt/java/openjdk
+         java.io.tmpdir                                : /opt/atlassian/jira/temp
+         java.locale.providers                         : COMPAT
+         java.naming.factory.initial                   : org.apache.naming.java.javaURLContextFactory
+         java.naming.factory.url.pkgs                  : org.apache.naming
+         java.protocol.handler.pkgs                    : org.apache.catalina.webresources
+         java.runtime.name                             : OpenJDK Runtime Environment
+         java.runtime.version                          : 11.0.13+8
+         java.specification.name                       : Java Platform API Specification
+         java.specification.vendor                     : Oracle Corporation
+         java.specification.version                    : 11
+         java.util.logging.config.file                 : /opt/atlassian/jira/conf/logging.properties
+         java.util.logging.manager                     : org.apache.juli.ClassLoaderLogManager
+         java.vendor                                   : Eclipse Adoptium
+         java.vendor.url                               : https://adoptium.net/
+         java.vendor.url.bug                           : https://github.com/adoptium/adoptium-support/issues
+         java.vendor.version                           : Temurin-11.0.13+8
+         java.version                                  : 11.0.13
+         java.version.date                             : 2021-10-19
+         java.vm.compressedOopsMode                    : 32-bit
+         java.vm.info                                  : mixed mode
+         java.vm.name                                  : OpenJDK 64-Bit Server VM
+         java.vm.specification.name                    : Java Virtual Machine Specification
+         java.vm.specification.vendor                  : Oracle Corporation
+         java.vm.specification.version                 : 11
+         java.vm.vendor                                : Eclipse Adoptium
+         java.vm.version                               : 11.0.13+8
+         jdk.debug                                     : release
+         jdk.tls.ephemeralDHKeySize                    : 2048
+         jira.home                                     : /var/atlassian/application-data/jira
+         mail.mime.decodeparameters                    : true
+         org.apache.catalina.security.SecurityListener.UMASK : 0027
+         org.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER : true
+         org.dom4j.factory                             : com.atlassian.core.xml.InterningDocumentFactory
+         os.arch                                       : amd64
+         os.name                                       : Linux
+         os.version                                    : 5.10.47-linuxkit
+         package.access                                : sun.,
+                                                         org.apache.catalina.,
+                                                         org.apache.coyote.,
+                                                         org.apache.jasper.,
+                                                         org.apache.tomcat.
+         package.definition                            : sun.,
+                                                         java.,
+                                                         org.apache.catalina.,
+                                                         org.apache.coyote.,
+                                                         org.apache.jasper.,
+                                                         org.apache.naming.,
+                                                         org.apache.tomcat.
+         server.loader                                 : 
+         shared.loader                                 : 
+         sun.arch.data.model                           : 64
+         sun.boot.library.path                         : /opt/java/openjdk/lib
+         sun.cpu.endian                                : little
+         sun.cpu.isalist                               : 
+         sun.io.unicode.encoding                       : UnicodeLittle
+         sun.java.command                              : org.apache.catalina.startup.Bootstrap start
+         sun.java.launcher                             : SUN_STANDARD
+         sun.jnu.encoding                              : UTF-8
+         sun.management.compiler                       : HotSpot 64-Bit Tiered Compilers
+         sun.os.patch.level                            : unknown
+         tomcat.util.buf.StringCache.byte.enabled      : true
+         tomcat.util.scan.StandardJarScanFilter.jarsToScan : log4j-taglib*.jar,
+                                                         log4j-web*.jar,
+                                                         log4javascript*.jar,
+                                                         slf4j-taglib*.jar
+         tomcat.util.scan.StandardJarScanFilter.jarsToSkip : annotations-api.jar,
+                                                         ant-junit*.jar,
+                                                         ant-launcher.jar,
+                                                         ant.jar,
+                                                         asm-*.jar,
+                                                         aspectj*.jar,
+                                                         bootstrap.jar,
+                                                         catalina-ant.jar,
+                                                         catalina-ha.jar,
+                                                         catalina-jmx-remote.jar,
+                                                         catalina-storeconfig.jar,
+                                                         catalina-tribes.jar,
+                                                         catalina-ws.jar,
+                                                         catalina.jar,
+                                                         cglib-*.jar,
+                                                         cobertura-*.jar,
+                                                         commons-beanutils*.jar,
+                                                         commons-codec*.jar,
+                                                         commons-collections*.jar,
+                                                         commons-daemon.jar,
+                                                         commons-dbcp*.jar,
+                                                         commons-digester*.jar,
+                                                         commons-fileupload*.jar,
+                                                         commons-httpclient*.jar,
+                                                         commons-io*.jar,
+                                                         commons-lang*.jar,
+                                                         commons-logging*.jar,
+                                                         commons-math*.jar,
+                                                         commons-pool*.jar,
+                                                         dom4j-*.jar,
+                                                         easymock-*.jar,
+                                                         ecj-*.jar,
+                                                         el-api.jar,
+                                                         geronimo-spec-jaxrpc*.jar,
+                                                         h2*.jar,
+                                                         hamcrest-*.jar,
+                                                         hibernate*.jar,
+                                                         httpclient*.jar,
+                                                         icu4j-*.jar,
+                                                         jasper-el.jar,
+                                                         jasper.jar,
+                                                         jaspic-api.jar,
+                                                         jaxb-*.jar,
+                                                         jaxen-*.jar,
+                                                         jdom-*.jar,
+                                                         jetty-*.jar,
+                                                         jmx-tools.jar,
+                                                         jmx.jar,
+                                                         jsp-api.jar,
+                                                         jstl.jar,
+                                                         jta*.jar,
+                                                         junit-*.jar,
+                                                         junit.jar,
+                                                         log4j*.jar,
+                                                         mail*.jar,
+                                                         objenesis-*.jar,
+                                                         oraclepki.jar,
+                                                         oro-*.jar,
+                                                         servlet-api-*.jar,
+                                                         servlet-api.jar,
+                                                         slf4j*.jar,
+                                                         taglibs-standard-spec-*.jar,
+                                                         tagsoup-*.jar,
+                                                         tomcat-api.jar,
+                                                         tomcat-coyote.jar,
+                                                         tomcat-dbcp.jar,
+                                                         tomcat-i18n-*.jar,
+                                                         tomcat-jdbc.jar,
+                                                         tomcat-jni.jar,
+                                                         tomcat-juli-adapters.jar,
+                                                         tomcat-juli.jar,
+                                                         tomcat-util-scan.jar,
+                                                         tomcat-util.jar,
+                                                         tomcat-websocket.jar,
+                                                         tools.jar,
+                                                         websocket-api.jar,
+                                                         wsdl4j*.jar,
+                                                         xercesImpl.jar,
+                                                         xml-apis.jar,
+                                                         xmlParserAPIs-*.jar,
+                                                         xmlParserAPIs.jar,
+                                                         xom-*.jar
+         user.country                                  : US
+         user.dir                                      : /var/atlassian/application-data/jira
+         user.home                                     : /var/atlassian/application-data/jira
+         user.language                                 : en
+         user.name                                     : jira
+         user.timezone                                 : Etc/UTC
+    
+2021-11-09 14:50:25,177+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2021-11-09 14:50:25,302+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2021-11-09 14:50:25,309+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2021-11-09 14:50:25,518+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2021-11-09 14:50:25,528+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2021-11-09 14:50:25,530+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2021-11-09 14:50:25,532+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2021-11-09 14:50:25,541+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2021-11-09 14:50:25,542+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2021-11-09 14:50:27,067+0000 JIRA-Bootstrap INFO      [c.a.j.c.cache.pauser.NonClusteredReplicationPauserManager] Non-clustered mode: ReplicationPauserManager implemented by NonClusteredReplicationPauserManager 
+2021-11-09 14:50:27,081+0000 JIRA-Bootstrap INFO      [c.a.jira.plugin.JiraCacheResetter] [jira-cache-reseter] Created and registered for events
+2021-11-09 14:50:27,106+0000 JIRA-Bootstrap INFO      [c.a.jira.plugin.PluginTransactionListener] [plugin-transaction] Created, registered for events and scheduled stats job every: 5 min
+2021-11-09 14:50:27,169+0000 JIRA-Bootstrap INFO      [c.a.jira.i18n.CachingI18nFactory] [i18n-caching-factory] Created
+2021-11-09 14:50:28,872+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2021-11-09 14:50:28,891+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2021-11-09 14:50:28,892+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2021-11-09 14:50:28,937+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] 
+    
+    ___ Starting the JIRA Plugin System _________________
+    
+2021-11-09 14:50:28,950+0000 JIRA-Bootstrap INFO      [c.a.plugin.manager.DefaultPluginManager] Plugin system earlyStartup begun
+2021-11-09 14:50:41,866+0000 FelixStartLevel WARN      [o.e.g.b.e.internal.support.ExtenderConfiguration] Gemini Blueprint extensions bundle not present, annotation processing disabled.
+2021-11-09 14:50:48,122+0000 JIRA-Bootstrap INFO      [c.a.plugin.loaders.ScanningPluginLoader] No plugins found to be deployed
+2021-11-09 14:50:50,219+0000 ThreadPoolAsyncTaskExecutor::Thread 2 WARN      [c.a.p.s.scanner.util.ProductFilterUtil] Couldn't detect product, no known services found: will use ProductFilter.ALL
+2021-11-09 14:50:54,088+0000 JIRA-Bootstrap INFO      [c.a.plugin.util.WaitUntil] Plugins that have yet to be enabled: (1): [com.atlassian.soy.soy-template-plugin], 300 seconds remaining
+2021-11-09 14:50:57,051+0000 JIRA-Bootstrap INFO      [c.a.plugin.manager.DefaultPluginManager] Plugin system earlyStartup ended
+2021-11-09 14:50:57,098+0000 JIRA-Bootstrap INFO      [c.a.jira.i18n.CachingI18nFactory] [i18n-caching-factory] Starting
+2021-11-09 14:50:57,627+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2021-11-09 14:50:57,667+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Trying to get encrypted password from xml and decrypt it
+2021-11-09 14:50:57,669+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigHandler] Database password decryption not performed.
+2021-11-09 14:50:57,719+0000 JIRA-Bootstrap INFO      [c.a.j.instrumentation.external.DatabaseExternalGauges] Installing DBCP monitoring instruments: DatabaseExternalGauges.JiraDbcpInstruments[instruments=[DBCP_MAX, DBCP_ACTIVE, DBCP_IDLE],objectName=com.atlassian.jira:name=BasicDataSource]
+2021-11-09 14:50:57,908+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] Running Jira startup checks.
+2021-11-09 14:50:57,911+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.JiraStartupLogger] Jira pre-database startup checks completed successfully.
+2021-11-09 14:50:58,129+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigurationManagerImpl] The database is not yet configured. Enqueuing Database Checklist Launcher on post-database-configured-but-pre-database-activated queue
+2021-11-09 14:50:58,136+0000 JIRA-Bootstrap INFO      [c.a.j.config.database.DatabaseConfigurationManagerImpl] The database is not yet configured. Enqueuing Post database-configuration launchers on post-database-activated queue
+2021-11-09 14:50:58,384+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.LauncherContextListener] Startup is complete. Jira is ready to serve.
+2021-11-09 14:50:58,400+0000 JIRA-Bootstrap INFO      [c.a.jira.startup.LauncherContextListener] Memory Usage:
+    ---------------------------------------------------------------------------------
+      Heap memory     :  Used:   68 MiB.  Committed:  384 MiB.  Max: 2048 MiB
+      Non-heap memory :  Used:   89 MiB.  Committed:  138 MiB.  Max: 1536 MiB
+    ---------------------------------------------------------------------------------
+      TOTAL           :  Used:  157 MiB.  Committed:  522 MiB.  Max: 3584 MiB
+    ---------------------------------------------------------------------------------
+2021-11-09 14:51:07,888+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:common-runtime]
+2021-11-09 14:51:07,897+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core]
+2021-11-09 14:51:07,898+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.0d131bcbf1]
+2021-11-09 14:51:07,900+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.444efc83be]
+2021-11-09 14:51:07,901+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.739b9ec8cc]
+2021-11-09 14:51:07,903+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.994e478d48]
+2021-11-09 14:51:07,904+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.479fe6ee76]
+2021-11-09 14:51:07,905+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.2e16019fb9]
+2021-11-09 14:51:07,906+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.8771ceac91]
+2021-11-09 14:51:07,907+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.7873ba9060]
+2021-11-09 14:51:07,908+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.0fc208f3fe]
+2021-11-09 14:51:07,910+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.2a34183e72]
+2021-11-09 14:51:07,911+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.core]
+2021-11-09 14:51:08,102+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:common-runtime]
+2021-11-09 14:51:08,105+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core]
+2021-11-09 14:51:08,107+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.0d131bcbf1]
+2021-11-09 14:51:08,109+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.444efc83be]
+2021-11-09 14:51:08,110+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.739b9ec8cc]
+2021-11-09 14:51:08,112+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.994e478d48]
+2021-11-09 14:51:08,113+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.479fe6ee76]
+2021-11-09 14:51:08,114+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.2e16019fb9]
+2021-11-09 14:51:08,115+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.8771ceac91]
+2021-11-09 14:51:08,116+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.7873ba9060]
+2021-11-09 14:51:08,118+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.0fc208f3fe]
+2021-11-09 14:51:08,119+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.2a34183e72]
+2021-11-09 14:51:08,121+0000 http-nio-8080-exec-1 WARN anonymous 890x2x1 - 172.19.0.1 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.core]
+2021-11-09 14:52:15,283+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:common-runtime]
+2021-11-09 14:52:15,297+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core]
+2021-11-09 14:52:15,299+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.0d131bcbf1]
+2021-11-09 14:52:15,301+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.444efc83be]
+2021-11-09 14:52:15,302+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.739b9ec8cc]
+2021-11-09 14:52:15,304+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.994e478d48]
+2021-11-09 14:52:15,308+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.479fe6ee76]
+2021-11-09 14:52:15,311+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.2e16019fb9]
+2021-11-09 14:52:15,312+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.8771ceac91]
+2021-11-09 14:52:15,313+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.7873ba9060]
+2021-11-09 14:52:15,314+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.0fc208f3fe]
+2021-11-09 14:52:15,317+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.2a34183e72]
+2021-11-09 14:52:15,319+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.core]
+2021-11-09 14:52:15,332+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:common-runtime]
+2021-11-09 14:52:15,334+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core]
+2021-11-09 14:52:15,336+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.0d131bcbf1]
+2021-11-09 14:52:15,337+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.444efc83be]
+2021-11-09 14:52:15,344+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.739b9ec8cc]
+2021-11-09 14:52:15,346+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.994e478d48]
+2021-11-09 14:52:15,347+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.479fe6ee76]
+2021-11-09 14:52:15,348+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.2e16019fb9]
+2021-11-09 14:52:15,350+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.8771ceac91]
+2021-11-09 14:52:15,351+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.7873ba9060]
+2021-11-09 14:52:15,353+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.0fc208f3fe]
+2021-11-09 14:52:15,354+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.splitchunk.2a34183e72]
+2021-11-09 14:52:15,356+0000 http-nio-8080-exec-9 WARN anonymous 892x208x1 1006ppc 172.19.0.4 /secure/SetupMode!default.jspa [webresource] cyclic plugin resource dependency has been detected with: com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, stack trace: [jira.webresources:jira-setup, jira.webresources:_polyfills, com.atlassian.frontend.atlassian-frontend-runtime-plugin:core-js, com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path, com.atlassian.auiplugin:aui-core, com.atlassian.auiplugin:split_aui.core]
+2021-11-09 14:55:27,109+0000 plugin-transaction-0 INFO      [c.a.jira.plugin.PluginTransactionListener] [JIRA-STATS] [plugin-transaction] numberStartEvents:4, numberEndEvents:4, numberSendEvents:38, numberEventsInTransactions:1954, numberOfPluginEnableEvents:37
